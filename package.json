@@ -1,0 +1,22 @@
+{
+  "name": "bonus_zadatak_6",
+  "version": "1.0.0",
+  "description": "- still to be added",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass public/scss/main.scss public/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nlukic97/bonus_zadatak_6.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nlukic97/bonus_zadatak_6/issues"
+  },
+  "homepage": "https://github.com/nlukic97/bonus_zadatak_6#readme",
+  "devDependencies": {
+    "sass": "^1.43.3"
+  }
+}
