@@ -24,14 +24,18 @@ let prices = [
 ]
 
 
-export function getPrice(index){
+function getRegularPrice(index){
     return prices[index].monthly_price;
 }
 
-export function getDiscountPrice(index){
+function getDiscountPrice(index){
     return (prices[index].monthly_price * (1 - (discountPercentage/100)));
 }
 
+export function getPrice(index, discount){
+    return (discount === true) ? getDiscountPrice(index) : getRegularPrice(index);
+}
+
 export function getViews(index){
-    return prices;
+    return prices[index].page_views;
 }

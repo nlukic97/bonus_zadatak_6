@@ -1,18 +1,20 @@
-export function addDiscount(){
-    console.log('adding discount');
-}
+import * as Prices from './prices.js';
 
-export function removeDiscount(){
-    console.log('removing discount');
-}
-
-export function getCurrentValue(input){
-    return input.value;
+function getDomData(rangePicker, switcher){  
+    return {
+        priceIndex: rangePicker.value/ rangePicker.step, 
+        discount: (switcher.classList.contains('selected')) ? true : false
+    };
 }
 
 
-// export function changeValues(yearlyDiscount = 0){
-//     let discount = 1 - yearlyDiscount;
 
 
-// }
+
+export function updateDOM(rangePicker, switcher){
+    
+    let {priceIndex, discount } = getDomData(rangePicker, switcher)
+
+    document.querySelector('#page-views').innerText = Prices.getViews(priceIndex)
+    document.querySelector('#price').innerText = Prices.getPrice(priceIndex,discount)
+}
