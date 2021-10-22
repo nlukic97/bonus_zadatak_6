@@ -3,26 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Insert Title Here</title>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <!-- JavaScript -->
+  <script type="module" src="./javascript/script.js" defer></script>
+  
+  <title>Nikola Lukic | Bonus Zadatak 6</title>
 </head>
 <body>
+  
+  <section class="slider">
+    <div class="container">
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
+      <div class="number-container">
+        <span id="page-views">100K pageviews</span>
+        
+        <div class="price">
+          <span id="price">16.00</span> <span class="time frame">/ month</span>
+        </div>
+      </div>
 
-  Pageviews
-  $ /month
 
-  Monthly Billing
-  Yearly Billing 25% discount
+      <input type="range" name="selected_range" id="selected_range" step="25" min="0" max="100">
 
-  Unlimited websites
-  100% data ownership
-  Email reports
+      <div class="billing-container">
+        <span>Monthly Billing</span>
+        <div class="switch"></div>
+        <span>Yearly Billing</span>
+        <span class="discount-label">25% discount </span>
 
-  Start my trial
+      </div>
+
+
+    </div>
+  </section>
 </body>
 </html>
