@@ -13,7 +13,7 @@ switcher.addEventListener('click',function(){
 
 
 
-rangePicker.addEventListener('change',function(){
+rangePicker.addEventListener('input',function(){
    changePrice(this, switcher)
    updateSecondSlider(this) 
 })

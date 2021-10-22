@@ -6,6 +6,11 @@
   
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <!-- Font import -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  
   <!-- Stylesheets -->
   <link rel="stylesheet" href="./css/style.css">
   
@@ -16,33 +21,56 @@
 </head>
 <body>
   
-  <section class="slider">
+  <section>
     <div class="container">
-
-      <div class="number-container">
-        <span><span id="page-views">100K</span> pageviews</span>
+      <h1 class="text-heading color-dark text-center">Simple, traffic-based pricing</h1>
+      <p class="text-paragraph color-gray text-center">Sign-up for our 30-day trial. No credit card required.</p>
+      
+    </div>
+  </section>
+  
+  <div class="container">
+    <section class="main">
+      
+      <div class="padding-left-right">
+        <div class="number-container">
+          <span class="text-pageview color-gray"><span id="page-views">100K</span> pageviews</span>
+          
+          <div class="price">
+            <span id="price" class="text-price text-dark">16.00</span> <span class="text-timespan color-gray">/ month</span>
+          </div>
+        </div>
         
-        <div class="price">
-          <span id="price">16.00</span> <span class="time frame">/ month</span>
+        
+        <div class="range-container">
+          <div class="curr-range"></div>
+          <input type="range" name="selected_range" id="selected_range" step="25" min="0" max="100" value="25">
+        </div>
+        
+        <div class="billing-container">
+          <span class="text-paragraph smaller color-gray">Monthly Billing</span>
+          <div class="switch"></div>
+          <span class="text-paragraph smaller color-gray">Yearly Billing</span>
+          <span class="discount-label highlight">25% discount </span>
         </div>
       </div>
 
-
-      <div class="range-container">
-        <div class="curr-range"></div>
-        <input type="range" name="selected_range" id="selected_range" step="25" min="0" max="100" value="25">
+      <div class="list-container">
+        
+        <div class="padding-left-right">
+          <div class="footer">
+            <ul class="text-paragraph smaller color-gray">  
+              <li>Unlimited websites</li>
+              <li>100% data ownership </li>
+              <li>Email reports</li>
+            </ul>
+  
+            <a href="#" class="btn">Start my trial</a>
+          </div>
+        </div>
       </div>
-
-      <div class="billing-container">
-        <span>Monthly Billing</span>
-        <div class="switch"></div>
-        <span>Yearly Billing</span>
-        <span class="discount-label">25% discount </span>
-
-      </div>
-
-
-    </div>
-  </section>
+      
+    </section>
+  </div>
 </body>
 </html>
