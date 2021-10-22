@@ -249,6 +249,13 @@ a.btn:hover {
   .container {
     width: 90%;
   }
+
+  .footer {
+    flex-direction: column;
+  }
+  .footer .btn {
+    margin-top: 30px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
