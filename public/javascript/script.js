@@ -2,7 +2,6 @@ import * as Methods from './methods.js';
 
 
 
-
 var switcher = document.querySelector('.switch');
 var rangePicker = document.querySelector('#selected_range')
 
@@ -27,6 +26,9 @@ function changePrice(switcher, rangePicker){
 function updateSecondSlider(rangePicker){
     document.querySelector('.curr-range').style.width = rangePicker.value + '%';
 }
+
+//Init
+changePrice(rangePicker,switcher)
 
 
 
