@@ -16,5 +16,5 @@ export function updateDOM(rangePicker, switcher){
     let {priceIndex, discount } = getDomData(rangePicker, switcher)
 
     document.querySelector('#page-views').innerText = Prices.getViews(priceIndex)
-    document.querySelector('#price').innerText = Prices.getPrice(priceIndex,discount)
+    document.querySelector('#price').innerText = Prices.getPrice(priceIndex,discount).toFixed(2)
 }

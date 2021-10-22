@@ -8,6 +8,23 @@
     justify-content: space-between;
 }
 
+.range-container {
+    position: relative;
+    height: 8px;
+    border-radius: 5px;
+    position: relative;
+
+    .curr-range {
+        width: 25%;
+        height: 8px;
+        background-color: #A4F3EB;
+        position: absolute;
+        z-index: 1;
+        border-radius: 5px;
+        transition: width 0.6s ease-out;
+    }
+}
+
 .switch {
     display: inline-block;
     width: 43px;
