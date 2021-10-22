@@ -1,5 +1,8 @@
 import * as Prices from './prices.js';
 
+
+
+
 function getDomData(rangePicker, switcher){  
     return {
         priceIndex: rangePicker.value/ rangePicker.step, 
@@ -7,10 +10,7 @@ function getDomData(rangePicker, switcher){
     };
 }
 
-
-
-
-
+// Exported methods (used in script.js)
 export function updateDOM(rangePicker, switcher){
     
     let {priceIndex, discount } = getDomData(rangePicker, switcher)

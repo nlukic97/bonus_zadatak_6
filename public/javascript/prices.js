@@ -32,6 +32,9 @@ function getDiscountPrice(index){
     return (prices[index].monthly_price * (1 - (discountPercentage/100)));
 }
 
+
+
+// exported methods (used in methods.js)
 export function getPrice(index, discount){
     return (discount === true) ? getDiscountPrice(index) : getRegularPrice(index);
 }
