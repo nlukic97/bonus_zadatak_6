@@ -3,26 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Insert Title Here</title>
+  <!-- Font import -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <!-- JavaScript -->
+  <script type="module" src="./javascript/script.js" defer></script>
+  
+  <title>Nikola Lukic | Bonus Zadatak 6</title>
 </head>
 <body>
+  <section>
+    <div class="container">
+      <header>
+        <h1 class="text-heading color-dark text-center">Simple, traffic-based pricing</h1>
+        <p class="text-paragraph color-gray text-center">Sign-up for our 30-day trial. No credit card required.</p>
+      </header>
+      
+    </div>
+  </section>
+  
+  <div class="container">
+    <section class="main">
+      
+      <div class="padding-left-right">
+        <div class="number-container">
+          <span class="text-pageview color-gray"><span id="page-views">50K</span> pageviews</span>
+          
+          <div class="price">
+            <span id="price" class="text-price text-dark">12.00</span> <span class="text-timespan color-gray">/ month</span>
+          </div>
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
+          <div class="range-container">
+            <div class="curr-range"></div>
+            <input type="range" name="selected_range" id="selected_range" step="25" min="0" max="100" value="25">
+          </div>
 
-  Pageviews
-  $ /month
+        </div>
+        
+        
+        
+        <div class="billing-container">
+          <span class="text-paragraph smaller color-gray">Monthly Billing</span>
+          <div class="switch"></div>
+          <span class="text-paragraph smaller color-gray">Yearly Billing</span>
+          <span class="discount-label highlight">25% discount </span>
+          <span class="discount-label highlight __smaller">25%</span>
+        </div>
+      </div>
 
-  Monthly Billing
-  Yearly Billing 25% discount
-
-  Unlimited websites
-  100% data ownership
-  Email reports
-
-  Start my trial
+      <div class="list-container">
+        
+        <div class="padding-left-right">
+          <div class="footer">
+            <ul class="text-paragraph smaller color-gray">  
+              <li>Unlimited websites</li>
+              <li>100% data ownership </li>
+              <li>Email reports</li>
+            </ul>
+  
+            <a href="#" class="btn">Start my trial</a>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+  </div>
 </body>
 </html>

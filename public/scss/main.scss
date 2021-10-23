@@ -1,3 +1,13 @@
-body {
-    background-color: red;
-}
+@import './imports/variables';
+
+@import './imports/base';
+
+@import './imports/typography';
+
+@import './imports/layout';
+
+@import './imports/slider';
+
+@import './imports/button';
+
+@import './imports/mediaQuery';

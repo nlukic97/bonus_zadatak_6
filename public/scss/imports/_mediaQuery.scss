@@ -1,0 +1,55 @@
+@media screen and (max-width:575px) {
+    .container {
+        width: 90%;
+    }
+    
+    .padding-left-right {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .highlight {
+        display: none;
+        &.__smaller {
+            display: block;
+        }
+    }
+    
+    
+    .number-container {
+        flex-direction: column;
+        
+        .range-container {
+            margin-bottom: 40px;
+        }
+        
+        .price {
+            order: 3;
+        }
+    }
+    
+    .billing-container {
+        margin-top: 40px;
+        // > span, > div {
+            
+            // }
+        }
+
+    .footer {
+        flex-direction: column;
+
+        .btn {
+            margin-top: 30px;
+        }
+    }
+}
+
+@media screen and (max-width:348px) {
+    .billing-container {
+        > span, > div {
+            &:not(:first-child){
+                margin-left: 6px;
+            }
+        }
+    }
+}

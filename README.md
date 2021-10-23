@@ -1,7 +1,7 @@
 # Bonus zadatak 6 - Nikola Lukic
 
 ## Production url:
-- still to be added
+https://bonus-zadatak-6-ten.vercel.app/
 
 ---
 

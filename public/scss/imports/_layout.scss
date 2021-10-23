@@ -1,0 +1,146 @@
+.container {
+    max-width: 540px;
+    margin: 0 auto;
+}
+
+header {
+    margin-top: 40px;
+    padding:40px 0;
+    background: url('../images/pattern-circles.svg') no-repeat center center/contain;
+
+    p {
+        margin: 10px 0;
+    }
+}
+
+.main {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    padding: 45px 0 0;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    box-shadow:0 20px 30px -5px rgba(127, 137, 185,.15);
+}
+
+.padding-left-right {
+    padding: 0 45px;
+}
+
+
+
+.number-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .price {
+        display: flex;
+        align-items: center;
+
+        #price {
+            padding-right: 10px;
+        }
+    }
+}
+
+
+
+
+.range-container {
+    position: relative;
+    height: 8px;
+    border-radius: 5px;
+    position: relative;
+    margin-top: 40px;
+    width: 100%;
+    background-color: #ECF0FB;
+
+    .curr-range {
+        width: 25%;
+        height: 8px;
+        background-color: #A4F3EB;
+        position: absolute;
+        z-index: 1;
+        border-radius: 5px;
+        transition: width 0.6s ease-out;
+    }
+}
+
+
+
+
+.switch {
+    display: inline-block;
+    width: 43px;
+    height: 22px;
+    background-color: $switch-color-off;
+    position: relative;
+    border-radius: 100px;
+    
+    &:hover {
+        cursor: pointer;
+    }
+
+    &::after {
+        content:'';
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        left: 9.3%;
+        top: 18%;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+    }
+
+    &.selected {
+        background-color: $switch-color-on;
+
+        &::after {
+            content:'';
+            left: unset;
+            right: 9.3%;
+        }
+    }
+}
+
+
+
+
+.billing-container {
+    margin-top: 55px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 3%;
+
+    > span, > div {
+        &:not(:first-child){
+            margin-left: 10px;
+        }
+    }
+}
+
+.list-container {
+    border-top: 1px solid #979797;
+    padding: 30px 0;
+
+    ul {
+        li {
+            display: block;
+            background: url('../images/icon-check.svg') no-repeat left center/contain;
+            background-size:8px;
+            padding:0 0 0 20px;
+            &:not(:first-child) {
+                padding:10px 0 0 20px;
+            }
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
