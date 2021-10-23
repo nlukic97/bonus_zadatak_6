@@ -65,6 +65,9 @@ a {
   border-radius: 100px;
   padding: 4px 8px;
 }
+.highlight.__smaller {
+  display: none;
+}
 
 .color-gray {
   color: #848EAD;
@@ -94,6 +97,7 @@ header p {
 
 .main {
   margin-top: 40px;
+  margin-bottom: 80px;
   padding: 45px 0 0;
   border-radius: 8px;
   background-color: #FFFFFF;
@@ -108,6 +112,7 @@ header p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .number-container .price {
   display: flex;
@@ -123,6 +128,8 @@ header p {
   border-radius: 5px;
   position: relative;
   margin-top: 40px;
+  width: 100%;
+  background-color: #ECF0FB;
 }
 .range-container .curr-range {
   width: 25%;
@@ -172,7 +179,7 @@ header p {
   align-items: center;
   padding-right: 3%;
 }
-.billing-container span, .billing-container div {
+.billing-container > span:not(:first-child), .billing-container > div:not(:first-child) {
   margin-left: 10px;
 }
 
@@ -203,11 +210,12 @@ header p {
   -webkit-appearance: none;
   width: 100%;
   height: 100%;
-  background: #ECF0FB;
+  background-color: transparent;
   outline: none;
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
   border-radius: 5px;
+  z-index: 2;
 }
 
 #selected_range:hover {
@@ -217,9 +225,10 @@ header p {
 #selected_range::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 25px;
-  height: 25px;
+  width: 40px;
+  height: 40px;
   background: url("../images/icon-slider.svg") no-repeat center center/contain;
+  background-size: 50%;
   background-color: #10D8C4;
   cursor: pointer;
   border-radius: 50%;
@@ -250,11 +259,42 @@ a.btn:hover {
     width: 90%;
   }
 
+  .padding-left-right {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .highlight {
+    display: none;
+  }
+  .highlight.__smaller {
+    display: block;
+  }
+
+  .number-container {
+    flex-direction: column;
+  }
+  .number-container .range-container {
+    margin-bottom: 40px;
+  }
+  .number-container .price {
+    order: 3;
+  }
+
+  .billing-container {
+    margin-top: 40px;
+  }
+
   .footer {
     flex-direction: column;
   }
   .footer .btn {
     margin-top: 30px;
+  }
+}
+@media screen and (max-width: 348px) {
+  .billing-container > span:not(:first-child), .billing-container > div:not(:first-child) {
+    margin-left: 6px;
   }
 }
 

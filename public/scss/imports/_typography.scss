@@ -48,6 +48,10 @@
     letter-spacing: 0;
     border-radius: 100px;
     padding: 4px 8px;
+
+    &.__smaller {
+        display: none;
+    }
 }
 
 .color-gray {
